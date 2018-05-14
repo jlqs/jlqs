@@ -28,24 +28,15 @@ public class MainActivity extends BaseActivity implements MainInter {
 
     @Override
     void initView() {
-        //反对反对法算法撒旦萨芬
-        //撒大苏打实打实
-        //5555555555555555
-        //反对反对法算法撒旦萨芬
-        //撒大苏打实打实
-        //5555555555555555
-        //反对反对法算法撒旦萨芬
-        //撒大苏打实打实
-        //5555555555555555
-         /**
-         * 沉浸式
-                */
+        /**
+         * 沉浸式    
+         */
         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.KITKAT) {
             ImmersionBar.with(this).init();
         } else {
             ChenJinUtil.startChenJin(this);
+            getSupportActionBar().hide();
         }
-        getSupportActionBar().hide();
         banner = find(R.id.banner);
         recyclerView = find(R.id.recycler);
         banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR);
@@ -73,9 +64,9 @@ public class MainActivity extends BaseActivity implements MainInter {
          */
 
         List<ResultBean.RetBean.ListBean> list = resultBean.getRet().getList();
-        for (int i = 0; i <list.size() ; i++) {
+        for (int i = 0; i < list.size(); i++) {
             List<ResultBean.RetBean.ListBean.ChildListBean> childList = resultBean.getRet().getList().get(i).getChildList();
-            for (int j = 0; j <childList.size() ; j++) {
+            for (int j = 0; j < childList.size(); j++) {
                 banners.add(childList.get(j).getPic().toString());
             }
         }
