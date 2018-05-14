@@ -19,7 +19,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends BaseActivity implements MainInter {
-
+/**
+ *
+ *
+ *
+ * 啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+ * 不不不不不不不不不不不不不不不不不不不不不不不不不不
+ *
+ *
+ * */
     private Banner banner;
     private RecyclerView recyclerView;
     private MainPersenter persenter;
